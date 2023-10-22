@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        header {
+            font-size: larger;
+            background-color: pink;
+            padding: 20px 0 20px 0;
+            margin: 10px 0 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: pink;
+            font-size: large;
+            padding: 10px 0 10px 0;
+            margin: 10px 0 10px 0;
+        }
+        article {
+            font-size: large;
+            background-color: pink;
+            padding: 20px 0 29px 0;
+            margin: 10px 0 10px 0;
+            float: left;
+            width: 27%;
+        }
+        aside {
+            font-size: large;
+            background-color: pink;
+            padding: 20px 0 20px 0;
+            margin: 10px 0 10px 0;
+            float: right;
+            width: 70% ;
+        }
+    </style>
+</head>
+<body>
+    <header>kartinifood</header>  
+    <nav>welcome foodies</nav>
+    <form action="hasil.html">
+        <main>
+            <article>
+                <table border="1">
+                    <tr>
+                        <td>jasuke</td>
+                        <td rowspan="2">
+                            <label for="jumlah">Rp. 2000</label>
+                            <input type="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="jasuke.jpg" alt="jasuke" width="150"></td>
+                    </tr>
+                    <tr>
+                        <td>spageti</td>
+                        <td rowspan="2">
+                            <label for="jumlah">Rp. 5000</label>
+                            <input type="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="spageti.jpg" alt="spageti" width="150"></td>
+                    </tr>
+                    <tr>
+                        <td>tansuke</td>
+                        <td rowspan="2">
+                            <label for="jumlah">Rp. 5000</label>
+                            <input type="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="tansuke.jpg" alt="tansuke" width="150"></td>
+                    </tr>
+                    <tr>
+                        <td>tekwan</td>
+                        <td rowspan="2">
+                            <label for="jumlah">Rp. 5000</label>
+                            <input type="number">
+                    </td>
+                    </tr>
+                    <tr>
+                        <td><img src="tekwan.jpg" alt="tekwan" width="150"></td>
+                    </tr>
+                </table>
+            </article>
+            <aside>
+                <strong>isi pesanan anda</strong>
+                <br>
+                <br>
+                <label for="namaanda">nama anda</label>
+                <input type="text">
+                <br>
+                <br>
+                <label for="metodepembayaran">metode pembayaran</label>
+                <select>
+                    <option value="pilih">pilih</option>
+                    <option value="Dana">Dana</option>
+                    <option value="Ovo">Ovo</option>
+                    <option value="shoopeepay">Shoopeepay</option>
+                </select>
+                <br>
+                <br>
+                <label for="buktitf">bukti bayar :</label>
+                <input type="file" name="buktitf">
+                <br>
+                <br>
+                <label for="Notes">Notes</label>
+                <textarea name="Notes" cols="30" rows="10"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Pesan sekarang">
+            </aside>
+        </main>
+    </form>
+</body>
+</html>

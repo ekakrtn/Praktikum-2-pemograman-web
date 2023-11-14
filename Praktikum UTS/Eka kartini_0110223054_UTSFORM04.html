@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Seminar Tugas Akhir Sista</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        form {
+            margin: 20px;
+        }
+
+        label,
+        input,
+        select,
+        textarea {
+            display: inline block;
+            margin-bottom: 10px;
+            vertical-align: top;
+        }
+
+        label {
+            width: 100px;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Jadwal</a>
+        <a href="#">Detail jawaban</a>
+        <a href="#">Daftar peserta</a>
+    </div>
+
+    <h1>From Peserta Seminar</h1>
+    <form>
+        <label for="nim">NIM</label>
+        <input type="text" id="nim" name="nim" required /><br />
+
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" required /><br />
+
+        <label for="prodi">Prodi</label>
+        <input type="text" id="prodi" name="prodi" required /><br />
+
+        <label for="prodi">Prodi</label>
+        <select name="prodi" id="prodi" required>
+            <option value="sistem informasi">Sistem informasi</option>
+            <option value="teknik informatika">Teknik informatika</option>
+            <option value="bisnis digital">Bisnis digital</option>
+        </select><br/>
+     
+        <label for="pilihan">Pilih salah satu</label>
+       <select name="program" id="program">
+        <option value="d3">D3</option>
+        <option value="s1 reguler">S1 reguler</option>
+        <option value="s1 fast track">S1 fast track</option>
+        <option value="s2">S2</option>
+       </select>
+
+        <input type="submit" value="Daftar">
+
+
+    </form>    
+</body>
+</html>
